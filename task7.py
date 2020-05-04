@@ -401,26 +401,6 @@ def k_means():
 			f.write("\n")
 	f.close()
 
-	# Clustering help: http://brandonrose.org/clustering
-	# dist = 1 - cosine_similarity(X)
-	# MDS()
-	# mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
-	# pos = mds.fit_transform(dist)
-	# xs, ys = pos[:,0], pos[:,1]
-
-	# df = pd.DataFrame(dict(x=xs, y=ys, label=clusters, title=c_names)) 
-	# varieties = {'varieties': c_names, 'cluster': clusters}
-	# frame = pd.DataFrame(varieties, index = [clusters] , columns = ['cluster'])
-	# counts = frame['cluster'].value_counts()
-	# print("COUNTS ", counts)
-
-	# cluster_names = {}
-	# for c,i in enumerate(clusters):
-	# 	cluster_names[i] = 'Cluster ' + str(i+1)
-	# # cluster_colors = {0: '#1b9e77', 1: '#d95f02', 2: '#7570b3', 3: '#e7298a', 4: '#66a61e'}
-	# #group by cluster
-	# groups = df.groupby('label')
-	# print("Groups ", groups)
 
 def getFreqWordsByCluster():
 	with open('freq_words_by_cluster.csv', 'r') as f:
